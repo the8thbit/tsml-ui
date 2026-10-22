@@ -147,6 +147,7 @@ export default function Controls() {
     <div css={controlsCss}>
       <form onSubmit={locationSearch} css={dropdownCss}>
         <fieldset role="group">
+          <legend>{strings.modes[input.mode]}</legend>
           <input
             aria-label={strings.modes[input.mode]}
             css={modes.length > 1 ? controlsInputFirstCss : controlsInputCss}

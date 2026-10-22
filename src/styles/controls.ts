@@ -16,6 +16,18 @@ export const controlsCss = css`
   }
 
   fieldset {
+    legend {
+      border: 0;
+      clip-path: inset(50%);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+
     button {
       padding: ${size.gutter / 2}px !important;
       width: 40px !important;
